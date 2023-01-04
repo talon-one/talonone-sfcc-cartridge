@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-03-31">
+    <custom-preferences>
+        <all-instances/>
+        <development>
+            <preference preference-id="API_Key"></preference>
+            <preference preference-id="API_key_prefix">ApiKey-v1</preference>
+            <preference preference-id="isLoyalPointsEnabled">true</preference>
+            <preference preference-id="isReferralCodeEnabled">true</preference>
+            <preference preference-id="isTalonOneEnabled">true</preference>
+            <preference preference-id="productAttributes">
+                <value>color</value>
+                <value>size</value>
+            </preference>
+            <preference preference-id="profile_id_prefix">test_RefArch</preference>
+            <preference preference-id="talonOneAttributeObjects">{
+    "attributes": [
+        {
+            "entity": "CustomerSession",
+            "name": "SiteId",
+            "title": "SiteId",
+            "type": "string",
+            "description": "Current Site ID",
+            "suggestions": [],
+            "editable": true
+        },
+        {
+            "entity": "CustomerSession",
+            "name": "Currency",
+            "title": "Currency",
+            "type": "string",
+            "description": "Currency used for this site",
+            "suggestions": [],
+            "editable": true
+        },
+		{
+            "entity": "CustomerSession",
+            "name": "rejected_free_items",
+            "title": "Rejected Free Items",
+            "type": "(list string)",
+            "description": "List of free item id removed by customer.",
+            "suggestions": [],
+            "editable": true
+        },
+        {
+            "entity": "CartItem",
+            "name": "masterId",
+            "title": "Master ID",
+            "type": "string",
+            "description": "Master ID",
+            "suggestions": [],
+            "editable": true
+        },
+        {
+            "entity": "CartItem",
+            "name": "uuId",
+            "title": "UUID",
+            "type": "string",
+            "description": "Unique ID",
+            "suggestions": [],
+            "editable": true
+        },
+        {
+            "entity": "CartItem",
+            "name": "size",
+            "title": "Size",
+            "type": "string",
+            "description": "Item Size",
+            "suggestions": [],
+            "editable": true
+        },
+        {
+            "entity": "CartItem",
+            "name": "color",
+            "title": "Color",
+            "type": "(list string)",
+            "description": "Item Color",
+            "suggestions": [],
+            "editable": true
+        },
+        {
+            "entity": "CartItem",
+            "name": "category",
+            "title": "Category",
+            "type": "(list string)",
+            "description": "Item Category",
+            "suggestions": [],
+            "editable": true
+        },
+        {
+            "entity": "CartItem",
+            "name": "itemPosition",
+            "title": "itemPosition",
+            "type": "number",
+            "description": "Lineitem position",
+            "suggestions": [],
+            "editable": true
+        },
+        {
+            "entity": "CustomerProfile",
+            "name": "SiteId",
+            "title": "site Id",
+            "type": "string",
+            "description": "Current Site ID",
+            "suggestions": [],
+            "editable": true
+        }
+    ]
+}</preference>
+        </development>
+        <staging/>
+        <production/>
+    </custom-preferences>
+</preferences>
+

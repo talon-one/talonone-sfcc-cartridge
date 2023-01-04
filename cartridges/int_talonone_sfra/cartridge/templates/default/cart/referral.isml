@@ -1,0 +1,99 @@
+<!--TalonOne Start-->
+
+<isif condition = "${pdict.talon.referral.isReferralEnabled}">
+
+<isscript>
+
+        var assets = require('*/cartridge/scripts/assets.js');
+
+        assets.addCss('/css/talonOne.css');
+
+    </isscript>
+
+<div class="row">
+
+    <div class="col-12 d-sm-none">
+
+        <p class="optional-promo">${Resource.msg('action.enter.referral.code','talonOne',null)}</p>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-12">
+
+        <form action="${pdict.talon.referral.submitReferralCodeUrl}" class="referral-code-form" method="GET" name="referral-code-form">
+
+            <div class="form-group">
+
+                <label for="referralCode">${Resource.msg('lablel.referral.EnterReferralCode','talonOne',null)}</label>
+
+                <div class="row">
+
+                    <div class="col-7">
+
+                        <input type="text" class="form-control referral-code-field" id="referralCode" name="referralCode" placeholder="${Resource.msg('lablel.referral.ReferralCode','talonOne',null)}">
+
+                        <div class="referral-error">
+
+                            <span class="referral-missing-error" id="missingReferralCode" role="alert">${Resource.msg('lablel.referral.error.missing.code', 'talonOne', null)}</span>
+
+                            <span class="referral-error-message" id="invalidReferralCode" role="alert"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
+
+
+                    <div class="col-5 promo-code-submit">
+
+                        <button type="submit" class="btn btn-primary btn-block referral-code-btn">
+
+                            ${Resource.msg('lablel.referral.Submit','talonOne',null)}
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </form>
+
+
+        <div class="coupon-price-adjustment promotion-information ${pdict.talon.referral.code ? '' : 'hide-referral'}" id="referral-section">
+
+            <div class="coupon-code " ><span id="r-code" data-url="${pdict.talon.referral.removeReferralCodeUrl}">${pdict.talon.referral.code}</span>
+
+                <button type="button" class="float-right remove-coupon"
+
+                        data-code="${pdict.talon.referral.code}"
+
+                        data-toggle="modal"
+
+                        data-target="#removeReferralModal"
+
+                         id="remove-referral-code">
+
+                    <span aria-hidden="true">×</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</isif>
+
+<!--TalonOne End-->

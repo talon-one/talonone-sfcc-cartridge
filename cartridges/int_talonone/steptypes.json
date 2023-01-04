@@ -1,0 +1,83 @@
+{
+
+    "step-types":
+
+    {
+
+      "script-module-step":
+
+      [
+
+        {
+
+          "@type-id":"custom.CreateTalonOneAttributesScriptStepType",
+
+          "@supports-parallel-execution":"true",
+
+          "@supports-site-context":"true",
+
+          "@supports-organization-context":"false",
+
+          "description":"Create TalonOne Attributes ScriptStep Type",
+
+          "module":"int_talonone/cartridge/scripts/steps/createTalonOneAttributes.js",
+
+          "function":"createAttributes",
+
+          "transactional":"false",
+
+          "timeout-in-seconds":"5000",
+
+          "parameters":
+
+          {
+
+            "parameter":
+
+            []
+
+          },
+
+          "status-codes":
+
+          {
+
+                    "status":
+
+            [
+
+                        {
+
+                            "@code": "ERROR",
+
+                            "description": "Used when the step failed with an error."
+
+                        },
+
+                        {
+
+                            "@code": "FINISHED",
+
+                "description": "Used when the step finished successfully."
+
+                        },
+
+                        {
+
+                            "@code": "FINISHED_WITH_WARNINGS",
+
+                "description": "Used when the step finished with warnings."
+
+                        }
+
+                    ]
+
+                }
+
+        }
+
+      ]
+
+    }
+
+  }

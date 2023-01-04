@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+
+	<type-extension type-id="Basket">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="talononeRejectedFreeItem">
+                <display-name xml:lang="x-default">Talonone Rejected Free Item</display-name>
+                <type>set-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="referralCode">
+                <display-name xml:lang="x-default">Referral Code</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+			<attribute-definition attribute-id="talononeCouponCodes">
+                <display-name xml:lang="x-default">Talonone Coupon Codes</display-name>
+                <type>set-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+        </custom-attribute-definitions>
+    </type-extension>
+	
+    <type-extension type-id="Order">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="customerProfileID">
+                <display-name xml:lang="x-default">Talon one customer profile Id</display-name>
+                <description xml:lang="x-default">Talon one customer profile Id</description>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="customerSessionID">
+                <display-name xml:lang="x-default">Talon one customer session Id</display-name>
+                <description xml:lang="x-default">Talon one customer session Id</description>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="talononeRejectedFreeItem">
+                <display-name xml:lang="x-default">Talonone Rejected Free Item</display-name>
+                <type>set-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+			<attribute-definition attribute-id="talononeCouponCodes">
+                <display-name xml:lang="x-default">Talonone Coupon Codes</display-name>
+                <type>set-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="referralCode">
+                <display-name xml:lang="x-default">Referral Code</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="TalonOne Attributes">
+                <display-name xml:lang="x-default">TalonOne Attributes</display-name>
+                <attribute attribute-id="customerSessionID"/>
+                <attribute attribute-id="customerProfileID"/>
+				<attribute attribute-id="talononeRejectedFreeItem"/>
+				<attribute attribute-id="talononeCouponCodes"/>
+                <attribute attribute-id="referralCode"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+    <type-extension type-id="PriceAdjustment">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="isTalonOneAdjustment">
+                <display-name xml:lang="x-default">IsTalonOneAdjustment</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="isTalonOneFreeItem">
+                <display-name xml:lang="x-default">Is TalonOne Free Item</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="talonOneFreeItemQty">
+                <display-name xml:lang="x-default">TalonOne Free Item Quantity</display-name>
+                <type>double</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="talonOneLineItemUuid">
+                <display-name xml:lang="x-default">TalonOne LineItem UUID</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="talonOnePriceAdjustment">
+                <display-name xml:lang="x-default">TalonOne PriceAdjustment UUID</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="talonOnePromotionRuleName">
+                <display-name xml:lang="x-default">TalonOne Promotion Rule Name</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </custom-attribute-definitions>
+    </type-extension>
+	
+	<type-extension type-id="ProductLineItem">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="hasTalonOneFreeItem">
+                <display-name xml:lang="x-default">Has TalonOne Free Item</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+        </custom-attribute-definitions>
+    </type-extension>
+
+    <type-extension type-id="SitePreferences">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="API_Key">
+                <display-name xml:lang="x-default">API Key</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="API_key_prefix">
+                <display-name xml:lang="x-default">API Key Prefix</display-name>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">ApiKey-v1</display>
+                        <value>ApiKey-v1</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="isTalonOneEnabled">
+                <display-name xml:lang="x-default">Is Talon One Enabled or not</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="productAttributes">
+                <display-name xml:lang="x-default">Product Attributes</display-name>
+                <type>set-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="profile_id_prefix">
+                <display-name xml:lang="x-default">profile id prefix</display-name>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">test</display>
+                        <value>test_SiteGenesis_</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">prod</display>
+                        <value>prod_SiteGenesis_</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">test</display>
+                        <value>test_RefArch_</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">test</display>
+                        <value>test_SiteGenesisGlobal_</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">test</display>
+                        <value>test_RefArchGlobal_</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">prod</display>
+                        <value>prod_RefArch_</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="talonOneAttributeObjects">
+                <display-name xml:lang="x-default">TalonOne Attribute Objects</display-name>
+                <description xml:lang="x-default">Eg:&#13;
+&#13;
+"entity" : CustomerProfile or CustomerSession or CartItem&#13;
+&#13;
+"type"   : String or Number or Boolean or Time&#13;
+&#13;
+Note:- This attribute will be used in the createTalonAttributesJob to create new attributes in Campaign Manager.</description>
+                <type>text</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="isLoyalPointsEnabled">
+                <display-name xml:lang="x-default">Is loyalty points enabled or not</display-name>
+                <description xml:lang="x-default">SFCC Admin can disable/ enabled loyal points in total displayed in 'Order Summary' and 'Order Confirmation page'</description>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="isReferralCodeEnabled">
+                <display-name xml:lang="x-default">Is referral code enabled or not</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="TalonOne">
+                <display-name xml:lang="x-default">Talon One</display-name>
+                <attribute attribute-id="isTalonOneEnabled"/>
+                <attribute attribute-id="API_key_prefix"/>
+                <attribute attribute-id="API_Key"/>
+                <attribute attribute-id="profile_id_prefix"/>
+                <attribute attribute-id="productAttributes"/>
+                <attribute attribute-id="talonOneAttributeObjects"/>
+                <attribute attribute-id="isLoyalPointsEnabled"/>
+                <attribute attribute-id="isReferralCodeEnabled"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+</metadata>

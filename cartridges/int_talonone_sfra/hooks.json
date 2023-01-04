@@ -1,0 +1,12 @@
+{
+    "hooks": [
+        {
+            "name": "dw.order.calculate",
+            "script": "./cartridge/scripts/hooks/cart/calculate.js"
+        },
+        {
+            "name": "dw.order.calculateDiscounts",
+            "script": "./../../../int_talonone/cartridge/scripts/helper/calculateHelper.js"
+        }
+    ]
+}

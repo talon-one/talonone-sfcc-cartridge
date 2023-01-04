@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs xmlns="http://www.demandware.com/xml/impex/jobs/2015-07-01">
+    <job job-id="CreateTalonAttributesJob" priority="0">
+        <description/>
+        <parameters/>
+        <flow>
+            <context site-id="RefArch"/>
+            <step step-id="CreateTalonOneAttributesScriptStepType" type="custom.CreateTalonOneAttributesScriptStepType" enforce-restart="false">
+                <description/>
+                <parameters/>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2022-06-27Z</date>
+                <time>08:25:05.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
+</jobs>

@@ -1,0 +1,47 @@
+<!--TalonOne Start: Referrals Points -->
+
+<div class="modal fade" id="removeReferralModal" tabindex="-1" role="dialog" aria-labelledby="removeCouponLineItemModal">
+
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+
+            <div class="modal-header delete-coupon-confirmation-header">
+
+                <h2 class="modal-title" id="removeReferralLineItemModal">${Resource.msg('heading.remove.referral.confirmation.modal','talonOne',null)}</h2>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            </div>
+
+            <div class="modal-body delete-coupon-confirmation-body">
+
+                ${Resource.msg('msg.remove.referral.confirmation.modal','talonOne',null)}
+
+                <p class="coupon-to-remove"></p>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">${Resource.msg('button.cancel','cart',null)}</button>
+
+                <button type="button" class="btn btn-primary referral-code-cancel"
+
+                        data-dismiss="modal"
+
+                        data-action="${pdict.talon.referral.removeReferralCodeUrl}">
+
+                    ${Resource.msg('button.confirm','cart',null)}
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--TalonOne End: Referrals Points -->

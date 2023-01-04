@@ -1,0 +1,28 @@
+<div class="cart-coupon-code cart-actions-top">
+
+    <input type="text" name="${pdict.CurrentForms.cart.referralCode.htmlName}" id="${pdict.CurrentForms.cart.referralCode.htmlName}" placeholder="${Resource.msg('lablel.referral.EnterReferralCode','talonOne',null)}" />
+
+    <button type="submit" value="${pdict.CurrentForms.cart.addReferral.htmlName}" name="${pdict.CurrentForms.cart.addReferral.htmlName}" id="add-referral">
+        ${Resource.msg('global.apply','locale',null)}
+    </button>
+
+    <isif condition="${pdict.ReferralError && pdict.ReferralError=='REFERRAL_CODE_MISSING'}">
+        <div class="error">
+            ${Resource.msg('lablel.referral.error.missing.code','talonOne', null)}
+        </div>
+    <iselseif condition="${pdict.ReferralError && pdict.ReferralError=='NO_ACTIVE_PROMOTION'}">
+        <div class="error">
+            ${Resource.msgf("cart.NO_ACTIVE_PROMOTION", "talonOne", "", pdict.CurrentForms.cart.referralCode.htmlValue)}
+        </div>
+    <iselseif condition="${pdict.ReferralStatus != null}">
+    <isif condition="${pdict.ReferralStatus.error}">
+    <div class="error">
+            ${pdict.ReferralStatus.code}
+    </div>
+    <iselseif condition="${pdict.ReferralStatus.error==false}">
+    <div class="text-success">
+            ${pdict.ReferralStatus.code}
+    </div>
+    </isif>
+    </isif>
+</div>
