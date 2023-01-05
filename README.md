@@ -1,6 +1,6 @@
 [<img src="https://assets-global.website-files.com/5d23691b4883306fdcfb2499/5f3519f51756d7464edaebcb_T1_logo.svg" alt="Talon.One" width="200">](https://www.talonone.com/)
 
-# Talon.One 2022 Salesforce Commerce Cloud Cartridge
+# Talon.One Salesforce Commerce Cloud Cartridge
 
 ## Company Overview
 The all-in-one promotion software designed for enterprises. Manage all your marketing promotions in one scalable system without stressing developer resources.
@@ -11,7 +11,7 @@ This repository contains the Talon.One integrations with the Salesforce Commerce
 * bm_talonone - includes functionality for Business Manager
 * int_talonone - includes the base functionality used by SG controllers and SFRA
 * int_talonone_controllers - includes SG Controllers specific logic
-* int_talonone_sfra - includes SG Controllers specific logic
+* int_talonone_sfra - includes SFRA Controllers specific logic
 
 ### SiteGenesis Javascript Controller (SGJC)
 For the manual, please see the `TalonOne_Controllers_Integration_Guide.docx` file in the `documentation` directory.
