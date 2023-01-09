@@ -24,11 +24,15 @@ The `cartridges` directory contains the following items:
 
 ### SiteGenesis Javascript Controller (SGJC)
 
-For integration instructions, please see the `TalonOne_Controllers_Integration_Guide.pdf` file in the `documentation` directory.
+For integration instructions,
+please see the [Talon.One_Controllers_SiteGenesis_Integration_Guide.pdf](https://github.com/talon-one/talonone-sfcc-cartridge/blob/main/documentation/Talon.One_Controllers_SiteGenesis_Integration_Guide.pdf) file
+in the `documentation` directory.
 
 ### Salesforce Reference Architecture (SFRA)
 
-For integration instructions, please see the `TalonOne_SFRA_Integration_Guide.pdf` file in the `documentation` directory.
+For integration instructions,
+please see the [Talon.One_SFRA_Integration_Guide.pdf](https://github.com/talon-one/talonone-sfcc-cartridge/blob/main/documentation/Talon.One_SFRA_Integration_Guide.pdf) file
+in the `documentation` directory.
 
 ## NPM scripts
 
